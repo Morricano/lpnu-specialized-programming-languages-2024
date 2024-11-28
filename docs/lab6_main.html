@@ -1,0 +1,79 @@
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">main</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:d%3A%5Clpnu-specialized-programming-languages-2024%5Clab6%5Cmain.py">d:\lpnu-specialized-programming-languages-2024\lab6\main.py</a></td></tr></table>
+    <p><span class="code">Програма&nbsp;калькулятора&nbsp;для&nbsp;виконання&nbsp;базових&nbsp;математичних&nbsp;операцій,&nbsp;таких&nbsp;як&nbsp;додавання,&nbsp;віднімання,&nbsp;множення,&nbsp;ділення,&nbsp;піднесення&nbsp;до&nbsp;степеня,&nbsp;обчислення&nbsp;квадратного&nbsp;кореня&nbsp;та&nbsp;залишку&nbsp;від&nbsp;ділення.<br>
+&nbsp;<br>
+Основні&nbsp;функції:<br>
+-&nbsp;Виконання&nbsp;математичних&nbsp;операцій&nbsp;над&nbsp;двома&nbsp;числами&nbsp;або&nbsp;одним&nbsp;числом&nbsp;для&nbsp;квадратного&nbsp;кореня.<br>
+-&nbsp;Перевірка&nbsp;введених&nbsp;операторів&nbsp;та&nbsp;чисел.<br>
+-&nbsp;Виведення&nbsp;результату&nbsp;обчислення.<br>
+-&nbsp;Запит&nbsp;на&nbsp;повторення&nbsp;обчислення.<br>
+&nbsp;<br>
+Клас:<br>
+-&nbsp;`<a href="#Calculator">Calculator</a>`:&nbsp;основний&nbsp;клас&nbsp;калькулятора,&nbsp;що&nbsp;надає&nbsp;методи&nbsp;для&nbsp;отримання&nbsp;введення&nbsp;користувача,&nbsp;перевірки&nbsp;операторів,&nbsp;обчислення&nbsp;результату&nbsp;та&nbsp;виведення&nbsp;результату.<br>
+&nbsp;<br>
+Методи:<br>
+-&nbsp;`__init__(self)`:&nbsp;ініціалізує&nbsp;калькулятор&nbsp;з&nbsp;початковим&nbsp;результатом&nbsp;0.<br>
+-&nbsp;`get_user_input(self)`:&nbsp;запитує&nbsp;у&nbsp;користувача&nbsp;введення&nbsp;чисел&nbsp;та&nbsp;оператора.&nbsp;Повертає&nbsp;False,&nbsp;якщо&nbsp;введено&nbsp;некоректне&nbsp;значення.<br>
+-&nbsp;`check_operator(self)`:&nbsp;перевіряє,&nbsp;чи&nbsp;є&nbsp;введений&nbsp;оператор&nbsp;допустимим.&nbsp;Повертає&nbsp;True&nbsp;або&nbsp;False.<br>
+-&nbsp;`calculate(self)`:&nbsp;виконує&nbsp;обчислення&nbsp;на&nbsp;основі&nbsp;введених&nbsp;чисел&nbsp;та&nbsp;оператора.<br>
+-&nbsp;`display_result(self)`:&nbsp;виводить&nbsp;результат&nbsp;обчислення.<br>
+-&nbsp;`ask_for_repeat(self)`:&nbsp;запитує&nbsp;користувача,&nbsp;чи&nbsp;хоче&nbsp;він&nbsp;виконати&nbsp;ще&nbsp;одне&nbsp;обчислення.&nbsp;Повертає&nbsp;True&nbsp;або&nbsp;False.<br>
+-&nbsp;`run(self)`:&nbsp;основний&nbsp;цикл&nbsp;програми,&nbsp;що&nbsp;дозволяє&nbsp;користувачу&nbsp;виконувати&nbsp;обчислення&nbsp;до&nbsp;тих&nbsp;пір,&nbsp;поки&nbsp;він&nbsp;не&nbsp;вибере&nbsp;завершити&nbsp;роботу.<br>
+&nbsp;<br>
+Програма&nbsp;автоматично&nbsp;виконує&nbsp;обчислення&nbsp;та&nbsp;дає&nbsp;користувачу&nbsp;можливість&nbsp;виконати&nbsp;додаткові&nbsp;обчислення&nbsp;або&nbsp;завершити&nbsp;роботу.<br>
+&nbsp;<br>
+Якщо&nbsp;виконати&nbsp;програму&nbsp;без&nbsp;помилок,&nbsp;вона&nbsp;буде&nbsp;пропонувати&nbsp;користувачу&nbsp;ввести&nbsp;нові&nbsp;числа&nbsp;та&nbsp;оператори&nbsp;до&nbsp;моменту,&nbsp;поки&nbsp;користувач&nbsp;не&nbsp;вирішить&nbsp;завершити&nbsp;роботу.</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="math.html">math</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="main.html#Calculator">Calculator</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Calculator">class <strong>Calculator</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor"><span class="code">&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Calculator-__init__"><strong>__init__</strong></a>(self)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<dl><dt><a name="Calculator-ask_for_repeat"><strong>ask_for_repeat</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Calculator-calculate"><strong>calculate</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Calculator-check_operator"><strong>check_operator</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Calculator-display_result"><strong>display_result</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Calculator-get_user_input"><strong>get_user_input</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Calculator-run"><strong>run</strong></a>(self)</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table>

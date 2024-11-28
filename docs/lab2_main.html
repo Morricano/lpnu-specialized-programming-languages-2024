@@ -1,0 +1,86 @@
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">main</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:d%3A%5Clpnu-specialized-programming-languages-2024%5Clab2%5Cmain.py">d:\lpnu-specialized-programming-languages-2024\lab2\main.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="math.html">math</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="main.html#Calculator">Calculator</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Calculator">class <strong>Calculator</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Клас&nbsp;для&nbsp;виконання&nbsp;математичних&nbsp;обчислень.&nbsp;Підтримує&nbsp;операції&nbsp;додавання,&nbsp;віднімання,&nbsp;множення,&nbsp;<br>
+ділення,&nbsp;піднесення&nbsp;до&nbsp;степеня,&nbsp;обчислення&nbsp;квадратного&nbsp;кореня&nbsp;і&nbsp;залишку&nbsp;від&nbsp;ділення.<br>
+&nbsp;<br>
+Атрибути:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;result&nbsp;(float):&nbsp;Змінна&nbsp;для&nbsp;збереження&nbsp;результату&nbsp;обчислення.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;num1&nbsp;(float):&nbsp;Перше&nbsp;введене&nbsp;число.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;num2&nbsp;(float):&nbsp;Друге&nbsp;введене&nbsp;число.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;operator&nbsp;(str):&nbsp;Оператор&nbsp;для&nbsp;виконання&nbsp;обчислення.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Calculator-__init__"><strong>__init__</strong></a>(self)</dt><dd><span class="code">Ініціалізує&nbsp;калькулятор,&nbsp;встановлюючи&nbsp;результат&nbsp;обчислень&nbsp;на&nbsp;0.</span></dd></dl>
+
+<dl><dt><a name="Calculator-ask_for_repeat"><strong>ask_for_repeat</strong></a>(self)</dt><dd><span class="code">Запитує&nbsp;користувача,&nbsp;чи&nbsp;бажає&nbsp;він&nbsp;виконати&nbsp;ще&nbsp;одне&nbsp;обчислення.<br>
+&nbsp;<br>
+Повертає:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;bool:&nbsp;True,&nbsp;якщо&nbsp;користувач&nbsp;хоче&nbsp;повторити&nbsp;обчислення,&nbsp;False&nbsp;—&nbsp;якщо&nbsp;ні.</span></dd></dl>
+
+<dl><dt><a name="Calculator-calculate"><strong>calculate</strong></a>(self)</dt><dd><span class="code">Виконує&nbsp;математичні&nbsp;обчислення&nbsp;на&nbsp;основі&nbsp;введених&nbsp;чисел&nbsp;і&nbsp;оператора.<br>
+&nbsp;<br>
+Повертає:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;bool:&nbsp;True,&nbsp;якщо&nbsp;обчислення&nbsp;виконано&nbsp;успішно,&nbsp;False&nbsp;—&nbsp;якщо&nbsp;сталася&nbsp;помилка&nbsp;(наприклад,&nbsp;ділення&nbsp;на&nbsp;нуль).</span></dd></dl>
+
+<dl><dt><a name="Calculator-check_operator"><strong>check_operator</strong></a>(self)</dt><dd><span class="code">Перевіряє&nbsp;правильність&nbsp;введеного&nbsp;оператора.<br>
+&nbsp;<br>
+Повертає:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;bool:&nbsp;True,&nbsp;якщо&nbsp;оператор&nbsp;допустимий,&nbsp;False&nbsp;—&nbsp;якщо&nbsp;оператор&nbsp;неправильний.</span></dd></dl>
+
+<dl><dt><a name="Calculator-display_result"><strong>display_result</strong></a>(self)</dt><dd><span class="code">Виводить&nbsp;результат&nbsp;обчислення&nbsp;на&nbsp;екран.</span></dd></dl>
+
+<dl><dt><a name="Calculator-get_user_input"><strong>get_user_input</strong></a>(self)</dt><dd><span class="code">Запитує&nbsp;у&nbsp;користувача&nbsp;перше&nbsp;число,&nbsp;оператор&nbsp;і&nbsp;друге&nbsp;число&nbsp;(якщо&nbsp;необхідно).<br>
+&nbsp;<br>
+Повертає:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;bool:&nbsp;True,&nbsp;якщо&nbsp;введення&nbsp;правильне,&nbsp;False&nbsp;—&nbsp;якщо&nbsp;сталася&nbsp;помилка&nbsp;введення.</span></dd></dl>
+
+<dl><dt><a name="Calculator-run"><strong>run</strong></a>(self)</dt><dd><span class="code">Основний&nbsp;цикл&nbsp;роботи&nbsp;калькулятора,&nbsp;який&nbsp;керує&nbsp;процесом&nbsp;введення&nbsp;даних,&nbsp;виконанням&nbsp;обчислень&nbsp;<br>
+і&nbsp;запитом&nbsp;на&nbsp;повторне&nbsp;обчислення.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-run_lab2"><strong>run_lab2</strong></a>()</dt><dd><span class="code">Запускає&nbsp;лабораторну&nbsp;роботу&nbsp;2,&nbsp;створюючи&nbsp;об'єкт&nbsp;калькулятора&nbsp;і&nbsp;викликаючи&nbsp;його&nbsp;основний&nbsp;цикл.</span></dd></dl>
+</td></tr></table>

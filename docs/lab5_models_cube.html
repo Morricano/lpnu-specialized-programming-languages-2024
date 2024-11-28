@@ -1,0 +1,108 @@
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">cube</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:d%3A%5Clpnu-specialized-programming-languages-2024%5Clab5%5Cmodels%5Ccube.py">d:\lpnu-specialized-programming-languages-2024\lab5\models\cube.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="os.html">os</a><br>
+</td><td class="multicolumn"><a href="re.html">re</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="cube.html#Cube">Cube</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Cube">class <strong>Cube</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Cube">Cube</a>(size_x=10,&nbsp;size_y=10,&nbsp;size_z=10,&nbsp;angle_x=0,&nbsp;angle_y=0,&nbsp;scale=1,&nbsp;color='White')<br>
+&nbsp;<br>
+Клас&nbsp;для&nbsp;моделювання&nbsp;куба,&nbsp;який&nbsp;може&nbsp;обертатись,&nbsp;масштабуватись&nbsp;та&nbsp;зберігатися&nbsp;у&nbsp;файл.<br>
+&nbsp;<br>
+Атрибути:<br>
+corners&nbsp;(list):&nbsp;Список&nbsp;з&nbsp;восьми&nbsp;вершин&nbsp;куба.<br>
+angle_x&nbsp;(float):&nbsp;Кут&nbsp;обертання&nbsp;куба&nbsp;навколо&nbsp;осі&nbsp;X.<br>
+angle_y&nbsp;(float):&nbsp;Кут&nbsp;обертання&nbsp;куба&nbsp;навколо&nbsp;осі&nbsp;Y.<br>
+scale&nbsp;(float):&nbsp;Масштаб&nbsp;куба.<br>
+color&nbsp;(str):&nbsp;Колір&nbsp;куба.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Cube-__init__"><strong>__init__</strong></a>(self, size_x=10, size_y=10, size_z=10, angle_x=0, angle_y=0, scale=1, color='White')</dt><dd><span class="code">Ініціалізація&nbsp;куба&nbsp;з&nbsp;початковими&nbsp;параметрами.<br>
+&nbsp;<br>
+Параметри:<br>
+size_x&nbsp;(float):&nbsp;Розмір&nbsp;куба&nbsp;по&nbsp;осі&nbsp;X&nbsp;(за&nbsp;замовчуванням&nbsp;10).<br>
+size_y&nbsp;(float):&nbsp;Розмір&nbsp;куба&nbsp;по&nbsp;осі&nbsp;Y&nbsp;(за&nbsp;замовчуванням&nbsp;10).<br>
+size_z&nbsp;(float):&nbsp;Розмір&nbsp;куба&nbsp;по&nbsp;осі&nbsp;Z&nbsp;(за&nbsp;замовчуванням&nbsp;10).<br>
+angle_x&nbsp;(float):&nbsp;Кут&nbsp;обертання&nbsp;по&nbsp;осі&nbsp;X&nbsp;(за&nbsp;замовчуванням&nbsp;0).<br>
+angle_y&nbsp;(float):&nbsp;Кут&nbsp;обертання&nbsp;по&nbsp;осі&nbsp;Y&nbsp;(за&nbsp;замовчуванням&nbsp;0).<br>
+scale&nbsp;(float):&nbsp;Масштаб&nbsp;куба&nbsp;(за&nbsp;замовчуванням&nbsp;1).<br>
+color&nbsp;(str):&nbsp;Колір&nbsp;куба&nbsp;(за&nbsp;замовчуванням&nbsp;"White").</span></dd></dl>
+
+<dl><dt><a name="Cube-rotate"><strong>rotate</strong></a>(self)</dt><dd><span class="code">Обертає&nbsp;куб&nbsp;на&nbsp;основі&nbsp;заданих&nbsp;кутів&nbsp;обертання&nbsp;по&nbsp;осях&nbsp;X&nbsp;та&nbsp;Y.<br>
+&nbsp;<br>
+Повертає:<br>
+list:&nbsp;Список&nbsp;нових&nbsp;координат&nbsp;вершин&nbsp;куба&nbsp;після&nbsp;обертання&nbsp;та&nbsp;масштабування.</span></dd></dl>
+
+<dl><dt><a name="Cube-save_to_file"><strong>save_to_file</strong></a>(self, filename, rendered_ascii)</dt><dd><span class="code">Зберігає&nbsp;ASCII-подання&nbsp;куба&nbsp;у&nbsp;файл&nbsp;у&nbsp;директорії&nbsp;../../results/lab5.<br>
+&nbsp;<br>
+Параметри:<br>
+filename&nbsp;(str):&nbsp;Ім'я&nbsp;файлу&nbsp;для&nbsp;збереження.<br>
+rendered_ascii&nbsp;(str):&nbsp;ASCII-подання&nbsp;куба&nbsp;у&nbsp;вигляді&nbsp;рядка.<br>
+&nbsp;<br>
+Викидає:<br>
+Exception:&nbsp;У&nbsp;разі&nbsp;виникнення&nbsp;помилки&nbsp;при&nbsp;збереженні&nbsp;в&nbsp;файл.</span></dd></dl>
+
+<dl><dt><a name="Cube-scale_cube"><strong>scale_cube</strong></a>(self, cube)</dt><dd><span class="code">Масштабує&nbsp;координати&nbsp;куба.<br>
+&nbsp;<br>
+Параметри:<br>
+cube&nbsp;(list):&nbsp;Список&nbsp;координат&nbsp;куба&nbsp;для&nbsp;масштабування.<br>
+&nbsp;<br>
+Повертає:<br>
+list:&nbsp;Масштабовані&nbsp;координати&nbsp;куба.</span></dd></dl>
+
+<dl><dt><a name="Cube-set_rotation"><strong>set_rotation</strong></a>(self, angle_x, angle_y)</dt><dd><span class="code">Встановлює&nbsp;кути&nbsp;обертання&nbsp;для&nbsp;куба.<br>
+&nbsp;<br>
+Параметри:<br>
+angle_x&nbsp;(float):&nbsp;Кут&nbsp;обертання&nbsp;по&nbsp;осі&nbsp;X.<br>
+angle_y&nbsp;(float):&nbsp;Кут&nbsp;обертання&nbsp;по&nbsp;осі&nbsp;Y.</span></dd></dl>
+
+<dl><dt><a name="Cube-set_scale"><strong>set_scale</strong></a>(self, scale)</dt><dd><span class="code">Встановлює&nbsp;масштаб&nbsp;для&nbsp;куба.<br>
+&nbsp;<br>
+Параметри:<br>
+scale&nbsp;(float):&nbsp;Масштаб&nbsp;куба,&nbsp;має&nbsp;бути&nbsp;між&nbsp;1&nbsp;та&nbsp;5.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-cos"><strong>cos</strong></a>(x, /)</dt><dd><span class="code">Return&nbsp;the&nbsp;cosine&nbsp;of&nbsp;x&nbsp;(measured&nbsp;in&nbsp;radians).</span></dd></dl>
+ <dl><dt><a name="-radians"><strong>radians</strong></a>(x, /)</dt><dd><span class="code">Convert&nbsp;angle&nbsp;x&nbsp;from&nbsp;degrees&nbsp;to&nbsp;radians.</span></dd></dl>
+ <dl><dt><a name="-sin"><strong>sin</strong></a>(x, /)</dt><dd><span class="code">Return&nbsp;the&nbsp;sine&nbsp;of&nbsp;x&nbsp;(measured&nbsp;in&nbsp;radians).</span></dd></dl>
+</td></tr></table>

@@ -1,0 +1,80 @@
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">data_handler</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:d%3A%5Clpnu-specialized-programming-languages-2024%5Clab8%5Cdal%5Cdata_handler.py">d:\lpnu-specialized-programming-languages-2024\lab8\dal\data_handler.py</a></td></tr></table>
+    <p><span class="code">Модуль&nbsp;для&nbsp;обробки&nbsp;та&nbsp;аналізу&nbsp;даних&nbsp;за&nbsp;допомогою&nbsp;бібліотеки&nbsp;pandas.<br>
+&nbsp;<br>
+Клас&nbsp;`<a href="#DataHandler">DataHandler</a>`&nbsp;надає&nbsp;методи&nbsp;для&nbsp;роботи&nbsp;з&nbsp;даними&nbsp;у&nbsp;форматі&nbsp;CSV,&nbsp;зокрема:<br>
+-&nbsp;Отримання&nbsp;мінімальних&nbsp;та&nbsp;максимальних&nbsp;значень&nbsp;для&nbsp;кожного&nbsp;стовпця.<br>
+-&nbsp;Фільтрація&nbsp;даних&nbsp;за&nbsp;заданими&nbsp;умовами.<br>
+&nbsp;<br>
+Методи:<br>
+-&nbsp;`get_column_extremes(self)`:&nbsp;Повертає&nbsp;мінімальні&nbsp;та&nbsp;максимальні&nbsp;значення&nbsp;для&nbsp;кожного&nbsp;стовпця&nbsp;даних.<br>
+-&nbsp;`filter_data(self,&nbsp;condition)`:&nbsp;Фільтрує&nbsp;дані&nbsp;за&nbsp;заданою&nbsp;умовою.</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="pandas.html">pandas</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="data_handler.html#DataHandler">DataHandler</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="DataHandler">class <strong>DataHandler</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#DataHandler">DataHandler</a>(filepath)<br>
+&nbsp;<br>
+Клас&nbsp;для&nbsp;обробки&nbsp;даних&nbsp;у&nbsp;форматі&nbsp;CSV&nbsp;з&nbsp;використанням&nbsp;бібліотеки&nbsp;pandas.<br>
+&nbsp;<br>
+Атрибути:<br>
+-&nbsp;`data`:&nbsp;Дані,&nbsp;що&nbsp;зберігаються&nbsp;у&nbsp;вигляді&nbsp;DataFrame.<br>
+&nbsp;<br>
+Методи:<br>
+-&nbsp;`<a href="#DataHandler-get_column_extremes">get_column_extremes</a>(self)`:&nbsp;Повертає&nbsp;мінімальні&nbsp;та&nbsp;максимальні&nbsp;значення&nbsp;для&nbsp;кожного&nbsp;стовпця.<br>
+-&nbsp;`<a href="#DataHandler-filter_data">filter_data</a>(self,&nbsp;condition)`:&nbsp;Фільтрує&nbsp;дані&nbsp;за&nbsp;заданою&nbsp;умовою.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="DataHandler-__init__"><strong>__init__</strong></a>(self, filepath)</dt><dd><span class="code">Ініціалізує&nbsp;клас&nbsp;<a href="#DataHandler">DataHandler</a>,&nbsp;зчитуючи&nbsp;дані&nbsp;з&nbsp;CSV&nbsp;файлу.<br>
+&nbsp;<br>
+Параметри:<br>
+-&nbsp;`filepath`:&nbsp;Шлях&nbsp;до&nbsp;файлу&nbsp;CSV,&nbsp;що&nbsp;містить&nbsp;дані.</span></dd></dl>
+
+<dl><dt><a name="DataHandler-filter_data"><strong>filter_data</strong></a>(self, condition)</dt><dd><span class="code">Фільтрує&nbsp;дані&nbsp;за&nbsp;заданою&nbsp;умовою.<br>
+&nbsp;<br>
+Параметри:<br>
+-&nbsp;`condition`:&nbsp;Умова&nbsp;для&nbsp;фільтрації&nbsp;даних&nbsp;у&nbsp;вигляді&nbsp;рядка&nbsp;(наприклад,&nbsp;'age&nbsp;&gt;&nbsp;30').<br>
+&nbsp;<br>
+Повертає:<br>
+-&nbsp;`pandas.DataFrame`:&nbsp;Фільтровані&nbsp;дані,&nbsp;що&nbsp;задовольняють&nbsp;умову.</span></dd></dl>
+
+<dl><dt><a name="DataHandler-get_column_extremes"><strong>get_column_extremes</strong></a>(self)</dt><dd><span class="code">Повертає&nbsp;мінімальні&nbsp;та&nbsp;максимальні&nbsp;значення&nbsp;для&nbsp;кожного&nbsp;стовпця&nbsp;даних.<br>
+&nbsp;<br>
+Повертає:<br>
+-&nbsp;`pandas.DataFrame`:&nbsp;Містить&nbsp;мінімальні&nbsp;та&nbsp;максимальні&nbsp;значення&nbsp;для&nbsp;кожного&nbsp;стовпця.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table>

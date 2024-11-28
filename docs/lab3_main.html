@@ -1,0 +1,69 @@
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">main</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:d%3A%5Clpnu-specialized-programming-languages-2024%5Clab3%5Cmain.py">d:\lpnu-specialized-programming-languages-2024\lab3\main.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="font.html">font</a><br>
+</td><td class="multicolumn"><a href="sys.html">sys</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-choose_color_option"><strong>choose_color_option</strong></a>()</dt><dd><span class="code">Запитує&nbsp;у&nbsp;користувача&nbsp;вибір&nbsp;кольору&nbsp;для&nbsp;ASCII-арту.<br>
+&nbsp;<br>
+Повертає:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;ANSI-код&nbsp;кольору,&nbsp;обраного&nbsp;користувачем.</span></dd></dl>
+ <dl><dt><a name="-generate_ascii_art"><strong>generate_ascii_art</strong></a>(text, alignment='ліворуч', width=80, height=5, symbols=('@', '#', '*'), color='\x1b[97m')</dt><dd><span class="code">Генерує&nbsp;ASCII-арт&nbsp;на&nbsp;основі&nbsp;введеного&nbsp;тексту&nbsp;та&nbsp;заданих&nbsp;параметрів.<br>
+&nbsp;<br>
+Параметри:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;text&nbsp;(str):&nbsp;Текст,&nbsp;який&nbsp;потрібно&nbsp;перетворити&nbsp;на&nbsp;ASCII-арт.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;alignment&nbsp;(str):&nbsp;Вирівнювання&nbsp;тексту&nbsp;(ліворуч,&nbsp;по&nbsp;центру,&nbsp;праворуч).&nbsp;За&nbsp;замовчуванням&nbsp;"ліворуч".<br>
+&nbsp;&nbsp;&nbsp;&nbsp;width&nbsp;(int):&nbsp;Ширина&nbsp;арт-об'єкта.&nbsp;За&nbsp;замовчуванням&nbsp;80.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;height&nbsp;(int):&nbsp;Висота&nbsp;арт-об'єкта.&nbsp;За&nbsp;замовчуванням&nbsp;5.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;symbols&nbsp;(tuple):&nbsp;Символи,&nbsp;які&nbsp;використовуються&nbsp;для&nbsp;створення&nbsp;арт-об'єкта.&nbsp;За&nbsp;замовчуванням&nbsp;('@',&nbsp;'#',&nbsp;'*').<br>
+&nbsp;&nbsp;&nbsp;&nbsp;color&nbsp;(str):&nbsp;ANSI-код&nbsp;для&nbsp;кольору&nbsp;тексту.&nbsp;За&nbsp;замовчуванням&nbsp;білий.<br>
+&nbsp;<br>
+Повертає:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;Генерований&nbsp;ASCII-арт&nbsp;у&nbsp;вигляді&nbsp;тексту&nbsp;з&nbsp;кольором&nbsp;та&nbsp;вирівнюванням.</span></dd></dl>
+ <dl><dt><a name="-main"><strong>main</strong></a>()</dt><dd><span class="code">Основна&nbsp;функція&nbsp;програми,&nbsp;що&nbsp;виконує&nbsp;наступні&nbsp;кроки:<br>
+1.&nbsp;Отримує&nbsp;текст&nbsp;від&nbsp;користувача.<br>
+2.&nbsp;Дозволяє&nbsp;вибрати&nbsp;колір&nbsp;для&nbsp;ASCII-арту.<br>
+3.&nbsp;Запитує&nbsp;ширину&nbsp;та&nbsp;вирівнювання.<br>
+4.&nbsp;Генерує&nbsp;ASCII-арт&nbsp;на&nbsp;основі&nbsp;введених&nbsp;параметрів.<br>
+5.&nbsp;Відображає&nbsp;попередній&nbsp;перегляд&nbsp;та&nbsp;надає&nbsp;можливість&nbsp;зберегти&nbsp;результат.<br>
+&nbsp;<br>
+Викликає:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-generate_ascii_art">generate_ascii_art</a>():&nbsp;Для&nbsp;створення&nbsp;ASCII-арту.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-preview_ascii_art">preview_ascii_art</a>():&nbsp;Для&nbsp;відображення&nbsp;попереднього&nbsp;перегляду.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-save_ascii_art">save_ascii_art</a>():&nbsp;Для&nbsp;збереження&nbsp;результату&nbsp;в&nbsp;файл.</span></dd></dl>
+ <dl><dt><a name="-preview_ascii_art"><strong>preview_ascii_art</strong></a>(art)</dt><dd><span class="code">Виводить&nbsp;попередній&nbsp;перегляд&nbsp;згенерованого&nbsp;ASCII-арту.<br>
+&nbsp;<br>
+Параметри:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;art&nbsp;(str):&nbsp;ASCII-арт,&nbsp;який&nbsp;потрібно&nbsp;відобразити.</span></dd></dl>
+ <dl><dt><a name="-run_lab3"><strong>run_lab3</strong></a>()</dt><dd><span class="code">Запускає&nbsp;лабораторну&nbsp;роботу&nbsp;3,&nbsp;виводячи&nbsp;повідомлення&nbsp;та&nbsp;викликаючи&nbsp;основну&nbsp;логіку&nbsp;програми.<br>
+&nbsp;<br>
+Викликає:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-main">main</a>():&nbsp;Запускає&nbsp;основну&nbsp;логіку&nbsp;лабораторної&nbsp;роботи.</span></dd></dl>
+ <dl><dt><a name="-save_ascii_art"><strong>save_ascii_art</strong></a>(art)</dt><dd><span class="code">Зберігає&nbsp;згенерований&nbsp;ASCII-арт&nbsp;у&nbsp;файл.<br>
+&nbsp;<br>
+Параметри:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;art&nbsp;(str):&nbsp;ASCII-арт,&nbsp;який&nbsp;потрібно&nbsp;зберегти&nbsp;у&nbsp;файл.<br>
+&nbsp;<br>
+Викликає:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;input():&nbsp;Запитує&nbsp;у&nbsp;користувача&nbsp;ім'я&nbsp;файлу&nbsp;для&nbsp;збереження.</span></dd></dl>
+</td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>COLOR_CODES</strong> = {'бірюзовий': '<span class="repr">\x1b</span>[96m', 'жовтий': '<span class="repr">\x1b</span>[93m', 'зелений': '<span class="repr">\x1b</span>[92m', 'синій': '<span class="repr">\x1b</span>[94m', 'скинути': '<span class="repr">\x1b</span>[0m', 'фіолетовий': '<span class="repr">\x1b</span>[95m', 'червоний': '<span class="repr">\x1b</span>[91m', 'чорно-білий': '<span class="repr">\x1b</span>[97m'}</td></tr></table>

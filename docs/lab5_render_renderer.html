@@ -1,0 +1,93 @@
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">renderer</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:d%3A%5Clpnu-specialized-programming-languages-2024%5Clab5%5Crender%5Crenderer.py">d:\lpnu-specialized-programming-languages-2024\lab5\render\renderer.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="renderer.html#Renderer">Renderer</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Renderer">class <strong>Renderer</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Renderer">Renderer</a>(resolution,&nbsp;foco,&nbsp;y_distorter,&nbsp;left_right,&nbsp;up_down)<br>
+&nbsp;<br>
+Клас&nbsp;для&nbsp;рендерингу&nbsp;3D&nbsp;куба&nbsp;та&nbsp;його&nbsp;проектування&nbsp;на&nbsp;2D&nbsp;екран.<br>
+&nbsp;<br>
+Атрибути:<br>
+resolution&nbsp;(int):&nbsp;Роздільна&nbsp;здатність&nbsp;екрану&nbsp;(розмір&nbsp;ASCII-арт).<br>
+foco&nbsp;(float):&nbsp;Відстань&nbsp;від&nbsp;об'єкта&nbsp;до&nbsp;камери&nbsp;(фокусна&nbsp;відстань).<br>
+y_distorter&nbsp;(float):&nbsp;Множник&nbsp;для&nbsp;корекції&nbsp;спотворення&nbsp;по&nbsp;осі&nbsp;Y.<br>
+left_right&nbsp;(int):&nbsp;Зміщення&nbsp;куба&nbsp;по&nbsp;горизонталі.<br>
+up_down&nbsp;(int):&nbsp;Зміщення&nbsp;куба&nbsp;по&nbsp;вертикалі.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Renderer-__init__"><strong>__init__</strong></a>(self, resolution, foco, y_distorter, left_right, up_down)</dt><dd><span class="code">Ініціалізація&nbsp;рендерера&nbsp;для&nbsp;проекції&nbsp;куба.<br>
+&nbsp;<br>
+Параметри:<br>
+resolution&nbsp;(int):&nbsp;Роздільна&nbsp;здатність&nbsp;(розмір&nbsp;екрану&nbsp;для&nbsp;рендерингу).<br>
+foco&nbsp;(float):&nbsp;Фокусна&nbsp;відстань&nbsp;для&nbsp;коректного&nbsp;відображення&nbsp;об'єкта.<br>
+y_distorter&nbsp;(float):&nbsp;Множник&nbsp;для&nbsp;спотворення&nbsp;по&nbsp;осі&nbsp;Y.<br>
+left_right&nbsp;(int):&nbsp;Зміщення&nbsp;об'єкта&nbsp;по&nbsp;осі&nbsp;X.<br>
+up_down&nbsp;(int):&nbsp;Зміщення&nbsp;об'єкта&nbsp;по&nbsp;осі&nbsp;Y.</span></dd></dl>
+
+<dl><dt><a name="Renderer-get_lines"><strong>get_lines</strong></a>(self, proj)</dt><dd><span class="code">Обчислює&nbsp;з'єднані&nbsp;лінії&nbsp;між&nbsp;точками&nbsp;куба&nbsp;після&nbsp;проекції.<br>
+&nbsp;<br>
+Параметри:<br>
+proj&nbsp;(list):&nbsp;Список&nbsp;проекцій&nbsp;точок&nbsp;куба&nbsp;на&nbsp;2D&nbsp;площину.<br>
+&nbsp;<br>
+Повертає:<br>
+list:&nbsp;Список&nbsp;ліній,&nbsp;що&nbsp;з'єднують&nbsp;проекції&nbsp;точок.</span></dd></dl>
+
+<dl><dt><a name="Renderer-interpolate"><strong>interpolate</strong></a>(self, x0, y0, x1, y1)</dt><dd><span class="code">Обчислює&nbsp;лінійне&nbsp;інтерполювання&nbsp;між&nbsp;двома&nbsp;точками.<br>
+&nbsp;<br>
+Параметри:<br>
+x0&nbsp;(int):&nbsp;Координата&nbsp;X&nbsp;першої&nbsp;точки.<br>
+y0&nbsp;(int):&nbsp;Координата&nbsp;Y&nbsp;першої&nbsp;точки.<br>
+x1&nbsp;(int):&nbsp;Координата&nbsp;X&nbsp;другої&nbsp;точки.<br>
+y1&nbsp;(int):&nbsp;Координата&nbsp;Y&nbsp;другої&nbsp;точки.<br>
+&nbsp;<br>
+Повертає:<br>
+list:&nbsp;Список&nbsp;точок,&nbsp;що&nbsp;лежать&nbsp;на&nbsp;лінії&nbsp;між&nbsp;двома&nbsp;точками.</span></dd></dl>
+
+<dl><dt><a name="Renderer-project"><strong>project</strong></a>(self, cube)</dt><dd><span class="code">Проектує&nbsp;координати&nbsp;вершин&nbsp;куба&nbsp;на&nbsp;2D&nbsp;площину.<br>
+&nbsp;<br>
+Параметри:<br>
+cube&nbsp;(list):&nbsp;Список&nbsp;вершин&nbsp;куба,&nbsp;що&nbsp;містить&nbsp;координати.<br>
+&nbsp;<br>
+Повертає:<br>
+list:&nbsp;Список&nbsp;проекцій&nbsp;вершин&nbsp;куба&nbsp;на&nbsp;2D&nbsp;площину.</span></dd></dl>
+
+<dl><dt><a name="Renderer-render"><strong>render</strong></a>(self, proj, lins, cube_color)</dt><dd><span class="code">Рендерить&nbsp;ASCII-арт&nbsp;з&nbsp;проекцією&nbsp;куба&nbsp;і&nbsp;його&nbsp;лініями.<br>
+&nbsp;<br>
+Параметри:<br>
+proj&nbsp;(list):&nbsp;Список&nbsp;проекцій&nbsp;вершин&nbsp;куба&nbsp;на&nbsp;2D&nbsp;площину.<br>
+lins&nbsp;(list):&nbsp;Список&nbsp;ліній&nbsp;для&nbsp;з'єднання&nbsp;проекцій.<br>
+cube_color&nbsp;(str):&nbsp;Колір&nbsp;куба&nbsp;для&nbsp;виведення.<br>
+&nbsp;<br>
+Повертає:<br>
+str:&nbsp;ASCII-арт&nbsp;куба.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table>

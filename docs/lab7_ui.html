@@ -1,0 +1,88 @@
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">ui</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:d%3A%5Clpnu-specialized-programming-languages-2024%5Clab7%5Cui.py">d:\lpnu-specialized-programming-languages-2024\lab7\ui.py</a></td></tr></table>
+    <p><span class="code">Модуль&nbsp;для&nbsp;взаємодії&nbsp;з&nbsp;користувачем,&nbsp;відображення&nbsp;даних&nbsp;та&nbsp;збереження&nbsp;їх&nbsp;у&nbsp;файли.<br>
+&nbsp;<br>
+Класи:<br>
+-&nbsp;`<a href="#UserInterface">UserInterface</a>`:&nbsp;клас&nbsp;для&nbsp;взаємодії&nbsp;з&nbsp;користувачем.<br>
+-&nbsp;Функція&nbsp;`<a href="#-main">main</a>()`:&nbsp;основна&nbsp;функція&nbsp;для&nbsp;запуску&nbsp;програми.<br>
+&nbsp;<br>
+Клас&nbsp;`<a href="#UserInterface">UserInterface</a>`:<br>
+-&nbsp;Відповідає&nbsp;за&nbsp;виведення&nbsp;даних,&nbsp;запит&nbsp;користувацького&nbsp;вводу&nbsp;та&nbsp;перевірку&nbsp;введених&nbsp;даних.<br>
+-&nbsp;Методи:<br>
+&nbsp;&nbsp;-&nbsp;`display_data(data,&nbsp;format_type='list',&nbsp;color=False)`:&nbsp;відображає&nbsp;дані&nbsp;в&nbsp;різних&nbsp;форматах&nbsp;(список&nbsp;або&nbsp;таблиця)&nbsp;та&nbsp;підтримує&nbsp;кольорове&nbsp;оформлення.<br>
+&nbsp;&nbsp;-&nbsp;`prompt_user_input()`:&nbsp;виводить&nbsp;запит&nbsp;на&nbsp;ввід&nbsp;користувача&nbsp;для&nbsp;вибору&nbsp;між&nbsp;'users',&nbsp;'posts'&nbsp;або&nbsp;'quit'.<br>
+&nbsp;&nbsp;-&nbsp;`validate_input(user_input)`:&nbsp;перевіряє,&nbsp;чи&nbsp;введений&nbsp;користувачем&nbsp;ввід&nbsp;є&nbsp;коректним&nbsp;('users',&nbsp;'posts',&nbsp;'quit').<br>
+&nbsp;<br>
+Функція&nbsp;`<a href="#-main">main</a>()`:<br>
+-&nbsp;Запускає&nbsp;програму,&nbsp;здійснює&nbsp;взаємодію&nbsp;з&nbsp;API&nbsp;для&nbsp;отримання&nbsp;даних,&nbsp;відображає&nbsp;їх&nbsp;у&nbsp;потрібному&nbsp;форматі&nbsp;та&nbsp;надає&nbsp;можливість&nbsp;збереження&nbsp;даних&nbsp;у&nbsp;файли&nbsp;(JSON,&nbsp;CSV,&nbsp;TXT).</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="re.html">re</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="ui.html#UserInterface">UserInterface</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="UserInterface">class <strong>UserInterface</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Клас&nbsp;для&nbsp;взаємодії&nbsp;з&nbsp;користувачем,&nbsp;відображення&nbsp;даних&nbsp;та&nbsp;отримання&nbsp;вводу.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Static methods defined here:<br>
+<dl><dt><a name="UserInterface-display_data"><strong>display_data</strong></a>(data, format_type='list', color=False)</dt><dd><span class="code">Виводить&nbsp;дані&nbsp;у&nbsp;відповідному&nbsp;форматі&nbsp;(список&nbsp;або&nbsp;таблиця).<br>
+&nbsp;<br>
+:param&nbsp;data:&nbsp;Дані&nbsp;для&nbsp;відображення.<br>
+:param&nbsp;format_type:&nbsp;Формат&nbsp;виведення&nbsp;('list'&nbsp;або&nbsp;'table').&nbsp;За&nbsp;замовчуванням&nbsp;'list'.<br>
+:param&nbsp;color:&nbsp;Чи&nbsp;використовувати&nbsp;кольорове&nbsp;оформлення.&nbsp;За&nbsp;замовчуванням&nbsp;False.</span></dd></dl>
+
+<dl><dt><a name="UserInterface-prompt_user_input"><strong>prompt_user_input</strong></a>()</dt><dd><span class="code">Запитує&nbsp;користувача&nbsp;про&nbsp;введення&nbsp;вибору.<br>
+&nbsp;<br>
+:return:&nbsp;Вибір&nbsp;користувача&nbsp;('users',&nbsp;'posts',&nbsp;'quit').</span></dd></dl>
+
+<dl><dt><a name="UserInterface-validate_input"><strong>validate_input</strong></a>(user_input)</dt><dd><span class="code">Перевіряє,&nbsp;чи&nbsp;є&nbsp;введене&nbsp;значення&nbsp;коректним.<br>
+&nbsp;<br>
+:param&nbsp;user_input:&nbsp;Введене&nbsp;користувачем&nbsp;значення.<br>
+:return:&nbsp;True,&nbsp;якщо&nbsp;ввід&nbsp;правильний,&nbsp;інакше&nbsp;False.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-main"><strong>main</strong></a>()</dt><dd><span class="code">Основна&nbsp;функція&nbsp;програми.&nbsp;Запускає&nbsp;взаємодію&nbsp;з&nbsp;користувачем,&nbsp;отримує&nbsp;дані&nbsp;з&nbsp;API,&nbsp;відображає&nbsp;їх&nbsp;та&nbsp;зберігає&nbsp;у&nbsp;файли.</span></dd></dl>
+</td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>Fore</strong> = &lt;colorama.ansi.AnsiFore object&gt;<br>
+<strong>Style</strong> = &lt;colorama.ansi.AnsiStyle object&gt;</td></tr></table>

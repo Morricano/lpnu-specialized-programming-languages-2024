@@ -1,0 +1,54 @@
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">main</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:d%3A%5Clpnu-specialized-programming-languages-2024%5Clab1%5Cmain.py">d:\lpnu-specialized-programming-languages-2024\lab1\main.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="json.html">json</a><br>
+</td><td class="multicolumn"><a href="math.html">math</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-calculate"><strong>calculate</strong></a>(num1, num2, operator)</dt><dd><span class="code">Виконує&nbsp;обчислення&nbsp;двох&nbsp;чисел&nbsp;з&nbsp;заданим&nbsp;оператором.<br>
+&nbsp;<br>
+Аргументи:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;num1&nbsp;(float):&nbsp;Перше&nbsp;число&nbsp;для&nbsp;обчислення.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;num2&nbsp;(float):&nbsp;Друге&nbsp;число&nbsp;для&nbsp;обчислення&nbsp;(для&nbsp;кореня&nbsp;num2&nbsp;не&nbsp;використовується).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;operator&nbsp;(str):&nbsp;Оператор&nbsp;обчислення.<br>
+&nbsp;<br>
+Повертає:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;float&nbsp;або&nbsp;str:&nbsp;Результат&nbsp;обчислення&nbsp;або&nbsp;повідомлення&nbsp;про&nbsp;помилку.</span></dd></dl>
+ <dl><dt><a name="-get_operator"><strong>get_operator</strong></a>()</dt><dd><span class="code">Отримує&nbsp;оператор&nbsp;для&nbsp;обчислення&nbsp;від&nbsp;користувача&nbsp;і&nbsp;перевіряє&nbsp;його&nbsp;на&nbsp;коректність.<br>
+&nbsp;<br>
+Повертає:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;Оператор,&nbsp;вибраний&nbsp;користувачем&nbsp;(+,&nbsp;-,&nbsp;*,&nbsp;/,&nbsp;^,&nbsp;%,&nbsp;√).</span></dd></dl>
+ <dl><dt><a name="-load_history"><strong>load_history</strong></a>()</dt><dd><span class="code">Завантажує&nbsp;історію&nbsp;обчислень&nbsp;з&nbsp;файлу&nbsp;history.json.<br>
+&nbsp;<br>
+Повертає:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;list:&nbsp;Список&nbsp;рядків&nbsp;з&nbsp;історією&nbsp;обчислень.</span></dd></dl>
+ <dl><dt><a name="-main"><strong>main</strong></a>()</dt><dd><span class="code">Основна&nbsp;функція&nbsp;калькулятора,&nbsp;яка&nbsp;керує&nbsp;процесом&nbsp;введення&nbsp;чисел,&nbsp;операцій,<br>
+обчислень,&nbsp;збереженням&nbsp;історії&nbsp;та&nbsp;використанням&nbsp;пам'яті.</span></dd></dl>
+ <dl><dt><a name="-run_lab1"><strong>run_lab1</strong></a>()</dt><dd><span class="code">Запускає&nbsp;основну&nbsp;програму&nbsp;калькулятора.</span></dd></dl>
+ <dl><dt><a name="-save_history"><strong>save_history</strong></a>(history)</dt><dd><span class="code">Зберігає&nbsp;історію&nbsp;обчислень&nbsp;у&nbsp;файл&nbsp;history.json.<br>
+&nbsp;<br>
+Аргументи:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;history&nbsp;(list):&nbsp;Список&nbsp;рядків,&nbsp;що&nbsp;містять&nbsp;історію&nbsp;обчислень.<br>
+&nbsp;<br>
+Викидає:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;IOError:&nbsp;Якщо&nbsp;файл&nbsp;не&nbsp;можна&nbsp;відкрити&nbsp;для&nbsp;запису.</span></dd></dl>
+</td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>locale</strong> = {'calc_again': 'Виконати ще одне обчислення? (так/ні): ', 'error_div_by_zero': 'Помилка: ділення на нуль!', 'error_file': 'Помилка доступу до файлу!', 'error_invalid_input': 'Помилка: введено некоректні дані!', 'error_negative_sqrt': "Помилка: корінь з від'ємного числа!", 'error_unknown': 'Несподівана помилка!', 'history': 'Переглянути історію? (так/ні): ', 'input_first': 'Введіть перше число: ', 'input_operator': 'Введіть оператор (+, -, *, /, ^, %, √): ', 'input_second': 'Введіть друге число: ', ...}</td></tr></table>

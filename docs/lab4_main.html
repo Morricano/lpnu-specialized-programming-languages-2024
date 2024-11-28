@@ -1,0 +1,72 @@
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">main</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:d%3A%5Clpnu-specialized-programming-languages-2024%5Clab4%5Cmain.py">d:\lpnu-specialized-programming-languages-2024\lab4\main.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-align_art"><strong>align_art</strong></a>(art, width, alignment)</dt><dd><span class="code">Вирівнює&nbsp;текст&nbsp;ASCII-арту&nbsp;відповідно&nbsp;до&nbsp;обраного&nbsp;варіанту.<br>
+&nbsp;<br>
+Аргументи:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;art&nbsp;(list):&nbsp;Список&nbsp;рядків&nbsp;ASCII-арту.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;width&nbsp;(int):&nbsp;Ширина,&nbsp;до&nbsp;якої&nbsp;потрібно&nbsp;вирівняти&nbsp;кожен&nbsp;рядок.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;alignment&nbsp;(str):&nbsp;Вибір&nbsp;вирівнювання&nbsp;("ліворуч",&nbsp;"по&nbsp;центру",&nbsp;"праворуч").<br>
+&nbsp;<br>
+Повертає:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;list:&nbsp;Список&nbsp;вирівняних&nbsp;рядків.</span></dd></dl>
+ <dl><dt><a name="-choose_alignment"><strong>choose_alignment</strong></a>()</dt><dd><span class="code">Запитує&nbsp;у&nbsp;користувача&nbsp;варіант&nbsp;вирівнювання.<br>
+&nbsp;<br>
+Повертає:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;Вибір&nbsp;користувача&nbsp;для&nbsp;вирівнювання&nbsp;("ліворуч",&nbsp;"по&nbsp;центру",&nbsp;"праворуч").</span></dd></dl>
+ <dl><dt><a name="-choose_color_scheme"><strong>choose_color_scheme</strong></a>()</dt><dd><span class="code">Запитує&nbsp;у&nbsp;користувача&nbsp;колірну&nbsp;схему.<br>
+&nbsp;<br>
+Повертає:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;Вибір&nbsp;користувача&nbsp;для&nbsp;колірної&nbsp;схеми&nbsp;(1&nbsp;або&nbsp;2).</span></dd></dl>
+ <dl><dt><a name="-display_art"><strong>display_art</strong></a>(art)</dt><dd><span class="code">Відображає&nbsp;ASCII-арт&nbsp;на&nbsp;екрані.<br>
+&nbsp;<br>
+Аргументи:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;art&nbsp;(list):&nbsp;Список&nbsp;рядків&nbsp;ASCII-арту&nbsp;для&nbsp;відображення.</span></dd></dl>
+ <dl><dt><a name="-generate_ascii_art"><strong>generate_ascii_art</strong></a>(text, height, symbols, color_scheme)</dt><dd><span class="code">Генерує&nbsp;ASCII-арт&nbsp;на&nbsp;основі&nbsp;введення&nbsp;користувача,&nbsp;набору&nbsp;символів&nbsp;та&nbsp;висоти.<br>
+&nbsp;<br>
+Аргументи:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;text&nbsp;(str):&nbsp;Текст&nbsp;для&nbsp;генерації&nbsp;ASCII-арту.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;height&nbsp;(int):&nbsp;Висота&nbsp;ASCII-арту.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;symbols&nbsp;(str):&nbsp;Набір&nbsp;символів&nbsp;для&nbsp;використання&nbsp;в&nbsp;ASCII-арті.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;color_scheme&nbsp;(str):&nbsp;Вибір&nbsp;колірної&nbsp;схеми.<br>
+&nbsp;<br>
+Повертає:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;list:&nbsp;Список&nbsp;рядків,&nbsp;що&nbsp;складають&nbsp;ASCII-арт.</span></dd></dl>
+ <dl><dt><a name="-get_art_dimensions"><strong>get_art_dimensions</strong></a>()</dt><dd><span class="code">Запитує&nbsp;у&nbsp;користувача&nbsp;ширину&nbsp;та&nbsp;висоту&nbsp;ASCII-арту.<br>
+&nbsp;<br>
+Повертає:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;tuple:&nbsp;Кортеж,&nbsp;що&nbsp;містить&nbsp;ширину&nbsp;та&nbsp;висоту&nbsp;ASCII-арту&nbsp;(int,&nbsp;int).</span></dd></dl>
+ <dl><dt><a name="-get_symbol_set"><strong>get_symbol_set</strong></a>()</dt><dd><span class="code">Запитує&nbsp;у&nbsp;користувача&nbsp;набір&nbsp;символів&nbsp;для&nbsp;ASCII-арту.<br>
+&nbsp;<br>
+Повертає:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;Набір&nbsp;символів&nbsp;для&nbsp;генерації&nbsp;ASCII-арту.&nbsp;Якщо&nbsp;користувач&nbsp;не&nbsp;введе&nbsp;символи,&nbsp;використовується&nbsp;за&nbsp;замовчуванням&nbsp;набір&nbsp;"@#*".</span></dd></dl>
+ <dl><dt><a name="-get_user_input"><strong>get_user_input</strong></a>()</dt><dd><span class="code">Запитує&nbsp;у&nbsp;користувача&nbsp;текст&nbsp;для&nbsp;ASCII-арту.<br>
+&nbsp;<br>
+Повертає:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;Текст,&nbsp;введений&nbsp;користувачем&nbsp;для&nbsp;створення&nbsp;ASCII-арту.</span></dd></dl>
+ <dl><dt><a name="-main"><strong>main</strong></a>()</dt><dd><span class="code">Основна&nbsp;функція&nbsp;програми&nbsp;для&nbsp;створення&nbsp;ASCII-арту.<br>
+Запитує&nbsp;вхідні&nbsp;дані&nbsp;від&nbsp;користувача,&nbsp;генерує&nbsp;ASCII-арт&nbsp;і&nbsp;надає&nbsp;можливість&nbsp;збереження.</span></dd></dl>
+ <dl><dt><a name="-preview_art"><strong>preview_art</strong></a>(art)</dt><dd><span class="code">Показує&nbsp;попередній&nbsp;перегляд&nbsp;ASCII-арту.<br>
+&nbsp;<br>
+Аргументи:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;art&nbsp;(list):&nbsp;Список&nbsp;рядків&nbsp;ASCII-арту&nbsp;для&nbsp;попереднього&nbsp;перегляду.</span></dd></dl>
+ <dl><dt><a name="-save_art_to_file"><strong>save_art_to_file</strong></a>(art)</dt><dd><span class="code">Зберігає&nbsp;ASCII-арт&nbsp;у&nbsp;файл.<br>
+&nbsp;<br>
+Аргументи:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;art&nbsp;(list):&nbsp;Список&nbsp;рядків&nbsp;ASCII-арту&nbsp;для&nbsp;збереження.</span></dd></dl>
+</td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>ASCII_LETTERS</strong> = {' ': ['     ', '     ', '     ', '     ', '     '], 'A': ['  @  ', ' @ @ ', '@@@@@', '@   @', '@   @'], 'B': ['@@@@ ', '@   @', '@@@@ ', '@   @', '@@@@ '], 'C': [' @@@ ', '@   @', '@    ', '@   @', ' @@@ '], 'D': ['@@@@ ', '@   @', '@   @', '@   @', '@@@@ '], 'E': ['@@@@@', '@    ', '@@@@ ', '@    ', '@@@@@'], 'F': ['@@@@@', '@    ', '@@@@ ', '@    ', '@    '], 'G': [' @@@ ', '@   @', '@  @@', '@   @', ' @@@ '], 'H': ['@   @', '@   @', '@@@@@', '@   @', '@   @'], 'I': [' @@@ ', '  @  ', '  @  ', '  @  ', ' @@@ '], ...}</td></tr></table>

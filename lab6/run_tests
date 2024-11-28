@@ -1,0 +1,14 @@
+import coverage
+import unittest
+
+cov = coverage.Coverage()
+cov.start()
+
+loader = unittest.TestLoader()
+suite = loader.discover('.')  
+unittest.TextTestRunner().run(suite)
+
+cov.stop()
+cov.save()
+cov.report()
+cov.html_report(directory='coverage_html_report') 

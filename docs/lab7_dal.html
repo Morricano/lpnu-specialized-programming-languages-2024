@@ -1,0 +1,113 @@
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">dal</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:d%3A%5Clpnu-specialized-programming-languages-2024%5Clab7%5Cdal.py">d:\lpnu-specialized-programming-languages-2024\lab7\dal.py</a></td></tr></table>
+    <p><span class="code">Модуль&nbsp;для&nbsp;взаємодії&nbsp;з&nbsp;API&nbsp;та&nbsp;збереження&nbsp;даних&nbsp;у&nbsp;різних&nbsp;форматах&nbsp;(JSON,&nbsp;CSV,&nbsp;TXT).<br>
+&nbsp;<br>
+Класи:<br>
+-&nbsp;`<a href="#APIClient">APIClient</a>`:&nbsp;клас&nbsp;для&nbsp;отримання&nbsp;даних&nbsp;з&nbsp;API.<br>
+-&nbsp;`<a href="#DataSaver">DataSaver</a>`:&nbsp;клас&nbsp;для&nbsp;збереження&nbsp;даних&nbsp;у&nbsp;файли&nbsp;(JSON,&nbsp;CSV,&nbsp;TXT).<br>
+&nbsp;<br>
+Клас&nbsp;`<a href="#APIClient">APIClient</a>`:<br>
+-&nbsp;Відповідає&nbsp;за&nbsp;отримання&nbsp;даних&nbsp;з&nbsp;API.<br>
+-&nbsp;Методи:<br>
+&nbsp;&nbsp;-&nbsp;`fetch_data(self,&nbsp;endpoint)`:&nbsp;здійснює&nbsp;запит&nbsp;до&nbsp;API&nbsp;на&nbsp;зазначений&nbsp;endpoint&nbsp;і&nbsp;повертає&nbsp;отримані&nbsp;дані&nbsp;у&nbsp;вигляді&nbsp;JSON.&nbsp;У&nbsp;разі&nbsp;помилки&nbsp;виводить&nbsp;повідомлення&nbsp;про&nbsp;помилку.<br>
+&nbsp;<br>
+Клас&nbsp;`<a href="#DataSaver">DataSaver</a>`:<br>
+-&nbsp;Відповідає&nbsp;за&nbsp;збереження&nbsp;даних&nbsp;у&nbsp;різних&nbsp;форматах&nbsp;(JSON,&nbsp;CSV,&nbsp;TXT).<br>
+-&nbsp;Методи:<br>
+&nbsp;&nbsp;-&nbsp;`save_to_json(data,&nbsp;filename)`:&nbsp;зберігає&nbsp;дані&nbsp;у&nbsp;форматі&nbsp;JSON.<br>
+&nbsp;&nbsp;-&nbsp;`save_to_csv(data,&nbsp;filename)`:&nbsp;зберігає&nbsp;дані&nbsp;у&nbsp;форматі&nbsp;CSV.<br>
+&nbsp;&nbsp;-&nbsp;`save_to_txt(data,&nbsp;filename)`:&nbsp;зберігає&nbsp;дані&nbsp;у&nbsp;текстовому&nbsp;форматі&nbsp;TXT.</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="csv.html">csv</a><br>
+</td><td class="multicolumn"><a href="json.html">json</a><br>
+</td><td class="multicolumn"><a href="requests.html">requests</a><br>
+</td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="dal.html#APIClient">APIClient</a>
+</dt><dt class="heading-text"><a href="dal.html#DataSaver">DataSaver</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="APIClient">class <strong>APIClient</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#APIClient">APIClient</a>(base_url)<br>
+&nbsp;<br>
+Клас&nbsp;для&nbsp;отримання&nbsp;даних&nbsp;з&nbsp;API.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="APIClient-__init__"><strong>__init__</strong></a>(self, base_url)</dt><dd><span class="code">Ініціалізація&nbsp;клієнта&nbsp;API&nbsp;з&nbsp;базовим&nbsp;URL.<br>
+&nbsp;<br>
+:param&nbsp;base_url:&nbsp;базова&nbsp;URL-адреса&nbsp;для&nbsp;API.</span></dd></dl>
+
+<dl><dt><a name="APIClient-fetch_data"><strong>fetch_data</strong></a>(self, endpoint)</dt><dd><span class="code">Отримує&nbsp;дані&nbsp;з&nbsp;API&nbsp;для&nbsp;зазначеного&nbsp;endpoint.<br>
+&nbsp;<br>
+:param&nbsp;endpoint:&nbsp;кінцевий&nbsp;шлях&nbsp;для&nbsp;запиту&nbsp;(наприклад,&nbsp;"users",&nbsp;"posts").<br>
+:return:&nbsp;Дані&nbsp;у&nbsp;форматі&nbsp;JSON&nbsp;або&nbsp;None&nbsp;у&nbsp;разі&nbsp;помилки.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="DataSaver">class <strong>DataSaver</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Клас&nbsp;для&nbsp;збереження&nbsp;даних&nbsp;у&nbsp;різних&nbsp;форматах&nbsp;(JSON,&nbsp;CSV,&nbsp;TXT).<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Static methods defined here:<br>
+<dl><dt><a name="DataSaver-save_to_csv"><strong>save_to_csv</strong></a>(data, filename)</dt><dd><span class="code">Зберігає&nbsp;дані&nbsp;у&nbsp;форматі&nbsp;CSV&nbsp;у&nbsp;файл.<br>
+&nbsp;<br>
+:param&nbsp;data:&nbsp;Список&nbsp;словників,&nbsp;які&nbsp;потрібно&nbsp;зберегти.<br>
+:param&nbsp;filename:&nbsp;Назва&nbsp;файлу&nbsp;для&nbsp;збереження.</span></dd></dl>
+
+<dl><dt><a name="DataSaver-save_to_json"><strong>save_to_json</strong></a>(data, filename)</dt><dd><span class="code">Зберігає&nbsp;дані&nbsp;у&nbsp;форматі&nbsp;JSON&nbsp;у&nbsp;файл.<br>
+&nbsp;<br>
+:param&nbsp;data:&nbsp;Дані,&nbsp;які&nbsp;потрібно&nbsp;зберегти.<br>
+:param&nbsp;filename:&nbsp;Назва&nbsp;файлу&nbsp;для&nbsp;збереження.</span></dd></dl>
+
+<dl><dt><a name="DataSaver-save_to_txt"><strong>save_to_txt</strong></a>(data, filename)</dt><dd><span class="code">Зберігає&nbsp;дані&nbsp;у&nbsp;текстовому&nbsp;форматі&nbsp;TXT&nbsp;у&nbsp;файл.<br>
+&nbsp;<br>
+:param&nbsp;data:&nbsp;Список&nbsp;елементів,&nbsp;які&nbsp;потрібно&nbsp;зберегти.<br>
+:param&nbsp;filename:&nbsp;Назва&nbsp;файлу&nbsp;для&nbsp;збереження.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>Fore</strong> = &lt;colorama.ansi.AnsiFore object&gt;</td></tr></table>
